@@ -1,60 +1,57 @@
-/* staatliches-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Staatliches';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/staatliches-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* inter-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/inter-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* inter-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/inter-v18-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
 body {
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top -30px right;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url("../img/bg_main@1x.jpg");
-  font-family: "Inter", sans-serif;
+  background-image: url("../img/bg-main.jpg");
+  font-family: "Days One", "Arial" ,sans-serif;
   color: #000000;
 }
 
 .bg-telegram {
+  font-family: "Days One", "Arial" ,sans-serif;
   background-position: top right;
   background-attachment: fixed;
-  background-image: url("../img/bg_telegram@1x.jpg");
+  background-image: url("../img/telegram-bg.jpg");
 }
 
-.gradient-text {
-  background: -webkit-linear-gradient(#379863, #50CA88);
+/*Fonts */
+
+.font-days-one {
+  font-family: "Days One", sans-serif;
+}
+
+.font-rubik {
+  font-family:  "Rubik", sans-serif;
+}
+
+
+
+.purple-gradient-text {
+  background: -webkit-linear-gradient(#760DFC, #3A0480);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-
 .gradient-button {
-  background: radial-gradient(50% 50% at 50% 50%, #379863 0%, #50CA88 100%);
+  background: #FEFE28;
+  box-shadow: 0 0.3rem 0 0 rgba(207,207,28,255);
+  transition: transform 0.1s ease;
 }
 
-.font-staatliches {
-  font-family: 'Staatliches', sans-serif;
+.telegram-button {
+  background: #28B6F6;
+  box-shadow: 0 0.3rem 0 0 rgba(19,141,196,255);
 }
+
+.gradient-button:active {
+  transform: translateY(0.3rem);
+}
+
+.telegram-button:active {
+  transform: translateY(0.3rem);
+}
+
 
 .telegram-radial {
   background-image: radial-gradient(#1F6588, #279FDB);
@@ -62,16 +59,28 @@ body {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   body {
-    background-image: url("../img/bg_main@2x.jpg");
+    background-image: url("../img/bg-main@2x.jpg");
   }
 
   .bg-telegram {
-    background-image: url("../img/bg_telegram@2x.jpg");
+    background-image: url("../img/telegram-bg@2x.jpg");
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   body, .bg-telegram {
-    background-image: none;
+    background-image: url("../img/mobile-bg.jpg");
   }
+  @media only screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    body {
+      background-image: url("../img/mobile-bg@2x.jpg");
+    }
+
+    .bg-telegram {
+      background-image: url("../img/mobile-bg@2x.jpg");
+    }
+  }
+
 }
+
+

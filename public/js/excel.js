@@ -2,7 +2,7 @@
 
 let user = JSON.parse(localStorage.getItem('user'));
 
-document.querySelector('#joinToChannel')?.addEventListener('click', () => {
+document.querySelector('.telegram-channel-btn')?.addEventListener('click', () => {
   window.location.href = 'https://t.me/+rneOxYu4aDYzNDYy';
 })
 
