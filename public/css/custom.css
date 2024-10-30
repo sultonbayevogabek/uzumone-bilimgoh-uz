@@ -71,8 +71,7 @@ body {
 }
 
 
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 3), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   body {
     background-image: url("../img/bg-main@2x.jpg");
   }
@@ -81,6 +80,9 @@ body {
     background-image: url("../img/telegram-bg@2x.jpg");
   }
 }
+
+
+
 
 @media only screen and (max-width: 1023px) {
   body, .bg-telegram {
