@@ -1,10 +1,14 @@
 'use strict';
 
 let user = JSON.parse(localStorage.getItem('user'));
+const subscriberButtons = document.querySelectorAll('.telegram-channel-btn');
 
-document.querySelector('.telegram-channel-btn')?.addEventListener('click', () => {
-  window.location.href = 'https://t.me/+rneOxYu4aDYzNDYy';
+subscriberButtons.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    window.location.href = 'https://t.me/+rneOxYu4aDYzNDYy';
+  })
 })
+
 
 if (user && user?.name && user?.phone && user?.time) {
     const formData = new FormData();
