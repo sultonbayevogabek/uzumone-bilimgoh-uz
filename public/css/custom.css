@@ -57,6 +57,21 @@ body {
   background-image: radial-gradient(#1F6588, #279FDB);
 }
 
+
+@media only screen and (min-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   body {
     background-image: url("../img/bg-main@2x.jpg");
